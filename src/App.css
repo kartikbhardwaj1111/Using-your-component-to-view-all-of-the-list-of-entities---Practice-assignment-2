@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,4 +41,76 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ✅ Styles for the social media app */
+
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #121212; /* Dark background for better contrast */
+  min-height: 100vh;
+  padding: 20px;
+  color: white; /* Ensures text is visible */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* ✅ Post Card */
+.post-card {
+  border: 1px solid #333; /* Darker border for better visibility */
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  background: #1e1e1e; /* Slightly lighter than background */
+  width: 320px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  text-align: left;
+  color: white; /* Ensures text is visible */
+}
+
+/* ✅ Profile Picture & Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between image and username */
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* ✅ Username */
+.username {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* ✅ Post Content */
+.post-content {
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+/* ✅ Like Button */
+.like-button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background: #e0e0e0;
+  transition: background 0.3s ease;
+}
+
+.like-button.liked {
+  background: red;
+  color: white;
 }
